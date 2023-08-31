@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="500.0" prefHeight="482.0" prefWidth="356.0" styleClass="cardPanel" stylesheets="@../../css/PokemonCard.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="68.0" prefHeight="50.0" prefWidth="288.0" styleClass="headBar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="pokeGif" fitHeight="43.0" fitWidth="43.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0">
+               <image>
+                  <Image url="@../../img/egg.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="pokeId" layoutX="53.0" layoutY="9.0" prefHeight="33.0" prefWidth="90.0" text="No.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="9.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="pokeName" layoutX="169.0" layoutY="9.0" prefHeight="30.0" prefWidth="142.0" text="?????" textFill="WHITE" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="50.20000000000002" AnchorPane.topAnchor="9.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="313.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+               <image>
+                  <Image url="@../../img/pokeBall_white.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="pokeImg" fitHeight="186.0" fitWidth="189.0" layoutX="84.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="226.0" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="70.0">
+         <image>
+            <Image url="@../../img/egg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="7.0" layoutY="256.0" prefHeight="110.0" prefWidth="175.0" AnchorPane.bottomAnchor="115.60000000000002" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="168.0">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" prefHeight="34.0" prefWidth="164.0" styleClass="bg-grey" text="Type" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="46.0" prefHeight="34.0" prefWidth="164.0" styleClass="bg-grey" text="Height" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="56.0" prefHeight="34.0" prefWidth="164.0" styleClass="bg-grey" text="Width" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="75.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="182.0" layoutY="256.0" prefHeight="110.0" prefWidth="175.0" AnchorPane.bottomAnchor="115.6" AnchorPane.leftAnchor="180.8" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="type" layoutX="14.0" layoutY="12.0" prefHeight="34.0" prefWidth="164.0" styleClass="bg-white" text="???" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="height" layoutX="5.0" layoutY="46.0" prefHeight="34.0" prefWidth="164.0" styleClass="bg-white" text="???" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="width" layoutX="15.0" layoutY="56.0" prefHeight="34.0" prefWidth="164.0" styleClass="bg-white" text="???" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="75.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="5.0" layoutY="366.0" prefHeight="110.0" prefWidth="175.0" AnchorPane.bottomAnchor="5.599999999999994" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="168.0">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="12.0" prefHeight="34.0" prefWidth="181.0" styleClass="bg-black" text="HP" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="5.0" layoutY="46.0" prefHeight="34.0" prefWidth="181.0" styleClass="bg-black" text="Attack" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="15.0" layoutY="56.0" prefHeight="34.0" prefWidth="181.0" styleClass="bg-black" text="Defense" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="75.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="180.0" layoutY="366.0" prefHeight="110.0" prefWidth="175.0" AnchorPane.bottomAnchor="5.599999999999994" AnchorPane.leftAnchor="180.8" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="hp" alignment="CENTER" layoutX="14.0" layoutY="12.0" prefHeight="34.0" prefWidth="164.0" styleClass="bg-black" text="???" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="attack" alignment="CENTER" layoutX="5.0" layoutY="46.0" prefHeight="34.0" prefWidth="164.0" styleClass="bg-black" text="???" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="defense" alignment="CENTER" layoutX="15.0" layoutY="56.0" prefHeight="34.0" prefWidth="164.0" styleClass="bg-black" text="???" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="75.0">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+   </children>
+</AnchorPane>

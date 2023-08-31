@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXAvatar?>
+<?import io.github.palexdev.materialfx.controls.MFXProgressSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemPanel" prefHeight="44.0" prefWidth="500.0" stylesheets="@../../css/PokemonItem.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MFXProgressSpinner fx:id="AvatorLoad" prefHeight="37.0" prefWidth="38.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="7.0" />
+      <RXAvatar fx:id="pokeAvator" arcHeight="60.0" arcWidth="60.0" layoutX="14.0" layoutY="7.0" prefHeight="45.0" prefWidth="37.0" visible="false" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="7.0">
+         <image>
+            <Image url="@../../img/egg.png" />
+         </image>
+      </RXAvatar>
+      <Label fx:id="pokeId" layoutX="90.0" layoutY="14.0" prefHeight="22.0" prefWidth="82.0" text="No.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="pokeName" layoutX="208.0" layoutY="12.0" prefHeight="28.0" prefWidth="197.0" text="??????" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="208.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="pokeBall" fitHeight="45.0" fitWidth="50.0" layoutX="441.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="3.0">
+         <image>
+            <Image url="@../../img/pokeBall_black.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

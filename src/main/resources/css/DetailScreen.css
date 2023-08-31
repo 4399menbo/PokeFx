@@ -1,0 +1,40 @@
+@import './material/Progress.css';
+
+#pokeType {
+    -fx-background-color: transparent;
+}
+
+TextArea .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+TextArea .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+
+TextArea .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+#pokeIcon{
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+
+#pokeIcon:hover {
+    -fx-scale-x: 1.4;
+    -fx-scale-y: 1.4;
+    -fx-cursor: hand;
+}
+
+.backBtn{
+    -fx-shape:"M938.666667 128H298.666667c-29.44 0-52.693333 14.933333-68.053334 37.546667L0 511.786667l230.613333 346.24C245.973333 880.64 269.226667 896 298.666667 896h640c47.146667 0 85.333333-38.186667 85.333333-85.333333V213.333333c0-47.146667-38.186667-85.333333-85.333333-85.333333z m-128 536.96L750.293333 725.333333 597.333333 572.373333 444.373333 725.333333 384 664.96 536.96 512 384 359.04 444.373333 298.666667 597.333333 451.626667 750.293333 298.666667 810.666667 359.04 657.706667 512 810.666667 664.96z";
+    -fx-background-color: #000;
+}
+
+.backBtn:hover{
+    -fx-background-color: #FFF;
+    -fx-cursor: hand;
+}
+

@@ -1,0 +1,18 @@
+#itemPanel:hover {
+    -fx-background-image: url("../img/itemBar.png");
+    -fx-background-position: center center;
+    -fx-cursor: hand;
+    -fx-background-size: cover;
+}
+
+#itemPanel:hover #pokeName {
+    -fx-text-fill: #fff;
+}
+
+#pokeBall {
+    -fx-image: url("../img/pokeBall_black.png");
+}
+
+#itemPanel:hover #pokeBall {
+    -fx-image: url("../img/pokeBall_white.png");
+}

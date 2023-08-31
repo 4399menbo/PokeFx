@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        svg{
+            width: 50%;
+            height: 50%;
+            animation: scaleChange 10s infinite alternate;
+        }
+
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 让整个页面占据视窗的高度 */
+            margin: 0; /* 去除默认的 margin */
+            background-image: url("{backImg}");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        circle{
+            stroke:"{color}";
+            animation: strokeChange 10s infinite alternate;
+        }
+
+        rect{
+            fill:"{color}";
+            animation: fillChange 10s infinite alternate;
+        }
+
+        @keyframes scaleChange {
+            0% {
+                transform: scale(1); /* 起始大小 */
+            }
+            50%{
+                transform: scale(1.1); /* 起始大小 */
+            }
+            100% {
+                transform: scale(1); /* 起始大小 */
+            }
+        }
+
+        @keyframes fillChange {
+            0% {
+                fill: "{color}"; /* 起始颜色 */
+            }
+            50%{
+                fill: red; /* 起始颜色 */
+            }
+            100% {
+                fill: "{color}"; /* 起始颜色 */
+            }
+        }
+
+        @keyframes strokeChange {
+            0% {
+                stroke: "{color}"; /* 起始颜色 */
+            }
+            50%{
+                stroke: red; /* 起始颜色 */
+            }
+            100% {
+                stroke: "{color}"; /* 起始颜色 */
+            }
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            function changeColor(color) {
+                var circles = document.querySelectorAll('circle');
+                circles.forEach(function(circle) {
+                    circle.style.stroke = color;
+                });
+                var rects = document.querySelectorAll('rect');
+                rects.forEach(function(rect) {
+                    rect.style.fill = color;
+                });
+            }
+
+            changeColor("{color}");
+        };
+    </script>
+</head>
+<body>
+    {svg}
+</body>
+</html>

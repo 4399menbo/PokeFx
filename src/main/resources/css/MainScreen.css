@@ -1,0 +1,39 @@
+@import './material/TextFields.css';
+
+#screenPanel {
+    -fx-background-image: url("../img/mainScreen.png");
+    -fx-background-position: center center;
+    -fx-background-size: cover;
+}
+
+#blackBar {
+    -fx-background-image: url("../img/blackBar.png");
+}
+
+#scrollPanel {
+    -fx-background-color: transparent;
+    /* 清除預設的背景顏色 */
+}
+
+#scrollPanel>.viewport {
+    /* //not .scrollpane but .scroll-pane */
+    -fx-background-color: transparent;
+}
+
+#listPanel {
+    -fx-background-color: transparent;
+}
+
+.searchBar {
+    -fx-shape: "M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z";
+    -fx-background-color: #000;
+}
+
+.searchBar:hover {
+    -fx-background-color: #ec7f0b;
+    -fx-cursor: hand;
+}
+
+#loadBar:hover{
+    -fx-cursor: hand;
+}
